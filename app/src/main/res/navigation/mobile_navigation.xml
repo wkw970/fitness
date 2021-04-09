@@ -12,14 +12,20 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.fitness.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_body"
+        android:name="com.example.fitness.ui.bodyBuilding.bodyBuildingFragment"
+        android:label="@string/title_tool"
+        tools:layout="@layout/fragment_body" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.fitness.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_community"
+        android:name="com.example.fitness.ui.community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/navigation_userInfo"
+        android:name="com.example.fitness.ui.userInfo.UserInfoFragment"
+        android:label="@string/title_userInfo"
+        tools:layout="@layout/fragment_userinfo" />
 </navigation>
