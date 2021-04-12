@@ -4,15 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.fitness.R
 
-class bodyBuildingFragment : Fragment() {
+class BodyBuildingFragment : Fragment() {
 
-    private lateinit var communityViewModel: bodyBuildingViewModel
+    private lateinit var communityViewModel: BodyBuildingViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -20,7 +19,7 @@ class bodyBuildingFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         communityViewModel =
-                ViewModelProviders.of(this).get(bodyBuildingViewModel::class.java)
+                ViewModelProviders.of(this).get(BodyBuildingViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_body, container, false)
 
         communityViewModel.text.observe(viewLifecycleOwner, Observer {

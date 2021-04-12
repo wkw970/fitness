@@ -10,6 +10,10 @@
         android:id="@+id/navigation_body"
         android:icon="@drawable/bb"
         android:title="@string/title_tool" />
+    <item
+        android:id="@+id/navigation_plus"
+        android:icon="@drawable/plus"
+        android:title="@string/title_plus"/>
 
     <item
         android:id="@+id/navigation_community"

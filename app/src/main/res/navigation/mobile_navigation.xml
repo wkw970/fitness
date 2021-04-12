@@ -13,9 +13,15 @@
 
     <fragment
         android:id="@+id/navigation_body"
-        android:name="com.example.fitness.ui.bodyBuilding.bodyBuildingFragment"
+        android:name="com.example.fitness.ui.bodyBuilding.BodyBuildingFragment"
         android:label="@string/title_tool"
         tools:layout="@layout/fragment_body" />
+
+    <fragment
+        android:id="@+id/navigation_plus"
+        android:name="com.example.fitness.ui.ReleaseNewsFragment"
+        android:label="@string/title_plus"
+        tools:layout="@layout/fragment_release_news"/>
 
     <fragment
         android:id="@+id/navigation_community"
@@ -27,5 +33,15 @@
         android:id="@+id/navigation_userInfo"
         android:name="com.example.fitness.ui.userInfo.UserInfoFragment"
         android:label="@string/title_userInfo"
-        tools:layout="@layout/fragment_userinfo" />
+        tools:layout="@layout/fragment_userinfo" >
+        <action
+            android:id="@+id/action_navigation_userInfo_to_userInfoEditFragment"
+            app:destination="@id/navigation_userInfo_edit" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_userInfo_edit"
+        android:name="com.example.fitness.ui.userInfo.UserInfoEditFragment"
+        android:label="UserInfoEditFragment" />
+
+
 </navigation>

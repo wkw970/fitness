@@ -4,4 +4,15 @@
     <string name="title_tool">健身</string>
     <string name="title_community">社区</string>
     <string name="title_userInfo">个人</string>
+    <string name="title_plus">动态</string>
+    <string name="hint_user">请输入昵称</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="name_enter">登录</string>
+    <string name="name_logout">注销登录</string>
+    <string name="name_mylikes">我的喜欢</string>
+    <string name="name_change_icon">更换头像</string>
+    <string name="name_nickname">昵称</string>
+    <string name="name_gender">性别</string>
+    <string name="name_save">保存</string>
+    <string name="permissionDenied">当前权限不够</string>
 </resources>
