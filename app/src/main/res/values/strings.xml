@@ -1,18 +1,25 @@
 <resources>
+    <string name="activity_login">登录</string>
     <string name="app_name">Fitness</string>
     <string name="title_home">主页</string>
     <string name="title_tool">健身</string>
     <string name="title_community">社区</string>
     <string name="title_userInfo">个人</string>
     <string name="title_plus">动态</string>
-    <string name="hint_user">请输入昵称</string>
-    <string name="hint_password">请输入密码</string>
+    <string name="hint_tel">输入手机号</string>
+    <string name="hint_password">输入密码</string>
+    <string name="hint_code">输入验证码</string>
     <string name="name_enter">登录</string>
     <string name="name_logout">注销登录</string>
     <string name="name_mylikes">我的喜欢</string>
     <string name="name_change_icon">更换头像</string>
-    <string name="name_nickname">昵称</string>
+    <string name="name_nickname">输入昵称</string>
     <string name="name_gender">性别</string>
     <string name="name_save">保存</string>
     <string name="permissionDenied">当前权限不够</string>
+    <string name="name_height">身高</string>
+    <string name="name_weight">体重</string>
+    <string name="name_getVerificationCode">获取验证码</string>
+    <string name="name_sport">今日步数</string>
+    <string name="name_BMI">BMI:</string>
 </resources>

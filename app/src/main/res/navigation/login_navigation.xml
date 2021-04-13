@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/navigation_loginFragment">
+
+<!--    验证码页面-->
+    <fragment
+        android:id="@+id/navigation_codeFragment"
+        android:name="com.example.fitness.ui.login.CodeFragment"
+        android:label="CodeFragment" >
+<!--        跳转到注册页面-->
+        <action
+            android:id="@+id/action_codeFragment_to_registerFragment"
+            app:destination="@id/navigation_registerFragment" />
+    </fragment>
+<!--    登陆页面-->
+    <fragment
+        android:id="@+id/navigation_loginFragment"
+        android:name="com.example.fitness.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <!--            跳转到验证码界面-->
+        <action
+            android:id="@+id/action_loginFragment_to_codeFragment"
+            app:destination="@id/navigation_codeFragment" />
+    </fragment>
+<!--    注册页面-->
+    <fragment
+        android:id="@+id/navigation_registerFragment"
+        android:name="com.example.fitness.ui.login.RegisterFragment"
+        android:label="RegisterFragment" />
+</navigation>

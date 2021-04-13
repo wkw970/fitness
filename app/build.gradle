@@ -1,6 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    appKey "314c796008a54"
+    appSecret "125e3c6be1a6c852d1d9766f2cb8d635"
+    SMSSDK {}
+}
 
 android {
     compileSdkVersion 29
@@ -52,12 +59,16 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
-    compile 'com.facebook.fresco:fresco:0.14.1'
-    compile 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.facebook.fresco:fresco:0.14.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
 
+//    下拉刷新
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    compile 'com.contrarywind:Android-PickerView:4.1.6'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

@@ -4,44 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
-
+<!--主页-->
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.fitness.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
-
+<!--健身方法界面-->
     <fragment
         android:id="@+id/navigation_body"
         android:name="com.example.fitness.ui.bodyBuilding.BodyBuildingFragment"
         android:label="@string/title_tool"
         tools:layout="@layout/fragment_body" />
 
+<!--    发布动态界面-->
     <fragment
         android:id="@+id/navigation_plus"
         android:name="com.example.fitness.ui.ReleaseNewsFragment"
         android:label="@string/title_plus"
         tools:layout="@layout/fragment_release_news"/>
 
+<!--    社区动态界面-->
     <fragment
         android:id="@+id/navigation_community"
         android:name="com.example.fitness.ui.community.CommunityFragment"
         android:label="@string/title_community"
         tools:layout="@layout/fragment_community" />
 
+<!--用户信息显示界面-->
     <fragment
         android:id="@+id/navigation_userInfo"
         android:name="com.example.fitness.ui.userInfo.UserInfoFragment"
         android:label="@string/title_userInfo"
         tools:layout="@layout/fragment_userinfo" >
+        <!--    跳转到用户编辑界面-->
         <action
             android:id="@+id/action_navigation_userInfo_to_userInfoEditFragment"
             app:destination="@id/navigation_userInfo_edit" />
     </fragment>
+
+
+<!--    用户编辑界面-->
     <fragment
         android:id="@+id/navigation_userInfo_edit"
         android:name="com.example.fitness.ui.userInfo.UserInfoEditFragment"
-        android:label="UserInfoEditFragment" />
+        android:label="UserInfoEditFragment" >
+        <!--    保存信息后返回用户信息界面-->
+        <action
+            android:id="@+id/action_navigation_userInfo_edit_to_navigation_userInfo"
+            app:destination="@id/navigation_userInfo" />
+    </fragment>
+
+<!--    用户注册界面-->
+
+    <!--    用户登录界面-->
+
+    <!--    验证码页面-->
+
+    <!--    用户登录界面-->
 
 
 </navigation>

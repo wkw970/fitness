@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 //单例类用来创建动态代理
 object ServiceCreator {
-    private const val BASE_URL ="http://192.168.137.1:8888" //访问的远程服务端IP地址
+    const val BASE_URL ="http://10.86.201.28:8888" //访问的远程服务端IP地址
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)

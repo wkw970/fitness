@@ -2,47 +2,65 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:id="@+id/fragment_login"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/fragment_login_use_password_login"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:gravity="right"
+        android:text="密码登录"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/fragment_login_user"
+        android:id="@+id/fragment_login_tel"
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:layout_marginTop="152dp"
         android:background="@drawable/rounded_rectangle"
+        android:inputType="number"
         android:gravity="center"
-        android:hint="@string/hint_user"
+        android:hint="@string/hint_tel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:visibility="gone"
         android:id="@+id/fragment_login_password"
         android:layout_width="250dp"
         android:layout_height="35dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/rounded_rectangle"
         android:gravity="center"
         android:hint="@string/hint_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_tel" />
 
     <Button
         android:id="@+id/fragment_login_enter"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="12dp"
         android:alpha=".6"
         android:background="@drawable/rounded_rectangle_solid_green"
         android:gravity="center"
-        android:text="@string/name_enter"
+        android:text="@string/name_getVerificationCode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

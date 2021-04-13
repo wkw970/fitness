@@ -12,5 +12,5 @@ data class userInfo(
     var weight : Int=0,
     var bmi : Double=1.0, //身体质量指数
     var tel : String="",
-    var gender : Boolean=true
+    var gender : String=""
 ):Parcelable
